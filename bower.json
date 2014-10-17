@@ -22,7 +22,6 @@
     "test",
     "tests"
   ],
-  ,
   "dependencies": {
     "tide-angular": "~0.0.11"  
   }
