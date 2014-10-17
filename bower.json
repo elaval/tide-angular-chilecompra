@@ -1,0 +1,29 @@
+{
+  "name": "tide-angular-chilecompra",
+  "version": "0.0.0",
+  "authors": [
+    "Ernesto Laval <ernesto.laval@gmail.com>"
+  ],
+  "description": "Angular directives for visual representations of Chilecompra's list of licitac",
+  "main": "tide-angular.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "data",
+    "visualization",
+    "chilecompra"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  ,
+  "dependencies": {
+    "tide-angular": "~0.0.11"  
+  }
+}
