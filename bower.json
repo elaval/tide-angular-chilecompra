@@ -1,6 +1,6 @@
 {
   "name": "tide-angular-chilecompra",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "authors": [
     "Ernesto Laval <ernesto.laval@gmail.com>"
   ],
@@ -23,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "tide-angular": "~0.0.11"  
+    "tide-angular": "latest"  
   }
 }
