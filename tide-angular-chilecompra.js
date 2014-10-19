@@ -82,12 +82,6 @@ tideElements.directive("tdChcChart",["$compile","_", "d3", "toolTip", "$window",
 
             scope.nSelected = data.length;
 
-/*
-            scope.$apply(function(){
-              scope.nSelected = data.length;
-            });
-*/
-
             var colorCategories = _.keys(_.groupBy(data, function(d) {return d["CodigoEstado"]})).sort();
             colorCategories = _.sortBy(colorCategories, function(d) {return +d});
 
@@ -163,31 +157,6 @@ tideElements.directive("tdChcChart",["$compile","_", "d3", "toolTip", "$window",
                 return colorScale(d["CodigoEstado"])
               })           
 
- 
-
-            /*
-            .attr("cx", function(d) {
-              return d.x;
-            })
-            .attr("cy", function(d) {
-              return d.y;
-            })
-            .attr("r", function(d) {
-              return  scope.selected && (d[scope.idAttribute] == scope.selected[scope.idAttribute]) ? 2*d.r : d.r
-            })
-            .attr("stroke-width", function(d) {
-              return scope.selected && (d[scope.idAttribute] == scope.selected[scope.idAttribute])? 2 : 1;
-            })
-
-            .attr("stroke", function(d) { return d3.rgb(colorScale(d[scope.colorAttribute])).darker(2); })
-            .each("end", function() {
-              scope.drawing = false;
-              scope.$apply();
-            })    
-            */   
-
-
-
           } //end if
 
           
@@ -210,7 +179,6 @@ tideElements.directive("tdChcChart",["$compile","_", "d3", "toolTip", "$window",
         };
 
         scope.$watch(scope.getElementDimensions, function (newValue, oldValue) {
-          console.log(newValue);
           resizeSvg();
           render(scope.data);
         }, true);
